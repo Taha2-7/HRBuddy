@@ -1,11 +1,14 @@
 import React from "react";
 import "./navbar.css";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const onLogout = () => {
+  const onLogout = (e) => {
+    e.preventDefault();
+    toast.success("Logged out successfully");
     navigate("/");
   };
 
@@ -17,7 +20,7 @@ const Navbar = () => {
         </div>
         <div className="right">
           <p>Welcome,Admin User</p>
-          <button onClick={onLogout}>Logout</button>
+          <button onClick={(e) => onLogout(e)}>Logout</button>
         </div>
       </div>
     </>
