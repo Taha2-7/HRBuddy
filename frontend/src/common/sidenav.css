@@ -1,0 +1,27 @@
+.sidenav {
+  height: 90vh;
+  width: fit-content;
+  background-color: rgb(238, 235, 235);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    /* margin: 5px; */
+    padding: 15px;
+  }
+
+  div {
+    padding: 10px;
+  }
+
+  div:hover {
+    background-color: rgb(65, 126, 239);
+    border-radius: 5%;
+    transition: 0.1s ease-in;
+  }
+}
