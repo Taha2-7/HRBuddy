@@ -59,7 +59,7 @@ const Register = () => {
                   </button>
                 </div>
                 <div style={{ textAlign: "center" }}>
-                  Already have an account?<Link to={"/"}> Sign in </Link>
+                  Already have an account<Link to={"/"}> Sign in </Link>
                 </div>
               </form>
             </div>
