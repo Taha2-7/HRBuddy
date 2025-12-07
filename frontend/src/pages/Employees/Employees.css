@@ -1,0 +1,58 @@
+.employee-container {
+  background-color: #f4f6f9;
+  padding-bottom: 25px;
+}
+
+/* table styles */
+.modern-table th {
+  background: #e9eef5 !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.modern-table td {
+  background: #fff !important;
+  vertical-align: middle;
+}
+
+/* button spacing */
+.employee-actions button {
+  margin-right: 6px;
+}
+
+/* modal styles */
+.modal-body label {
+  font-weight: 500;
+}
+
+.avatar-circle {
+  width: 35px;
+  height: 35px;
+  background-color: #4e73df;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;  
+}
+
+
+
+.avatar-large {
+  width: 90px;
+  height: 90px;
+  background-color: #4e73df;
+  border-radius: 50%;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 auto;  
+}
+
+
