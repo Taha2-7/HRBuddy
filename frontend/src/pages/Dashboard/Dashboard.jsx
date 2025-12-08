@@ -4,7 +4,12 @@ import Layout from "../../common/Layout";
 import DashboardCharts from "./DashboardCharts";
 
 import "./Dashboard.css";
-import { FaUsers, FaBuilding, FaUserCheck, FaCalendarAlt } from "react-icons/fa";
+import {
+  FaUsers,
+  FaBuilding,
+  FaUserCheck,
+  FaCalendarAlt,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Dashboard() {
@@ -120,7 +125,12 @@ export default function Dashboard() {
 
   return (
     <Layout>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        style={{ overflow: "hidden" }}
+      >
         <h2 className="mb-4 fw-bold">Dashboard</h2>
 
         {/* ======== STAT CARDS ======== */}
@@ -187,9 +197,12 @@ export default function Dashboard() {
         </div>
 
         {/* ======== CHARTS ======== */}
-        <DashboardCharts departmentData={departmentData} leaveData={leaveData} />
+        {/* <DashboardCharts
+          departmentData={departmentData}
+          leaveData={leaveData}
+        /> */}
 
-        {/* ======== RECENT LEAVE REQUESTS ======== */}
+        {/* RECENT LEAVE REQUESTS */}
         <div className="row mt-4">
           <div className="col">
             <div className="card shadow-sm">
