@@ -4,11 +4,14 @@ import logo from "../assets/logo.png";
 import stock from "../assets/stock.png";
 import { Link, useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const navigate = useNavigate();
 
-  const onLogin = () => {
+  const onLogin = (e) => {
+    e.preventDefault();
+    toast.success("Login successful");
     navigate("/dashboard");
   };
 
@@ -46,7 +49,7 @@ const Login = () => {
                 </div>
                 <div>
                   <button
-                    onClick={onLogin}
+                    onClick={(e) => onLogin(e)}
                     style={{ width: "100%" }}
                     className="btn"
                   >
@@ -54,7 +57,7 @@ const Login = () => {
                   </button>
                 </div>
                 <div style={{ textAlign: "center" }}>
-                  Don't have an account? <Link>Sign up</Link>
+                  Don't have an account? <Link to={"/register"}>Sign up</Link>
                 </div>
               </form>
             </div>
