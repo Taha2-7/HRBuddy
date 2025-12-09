@@ -5,7 +5,7 @@ import PayrollFilter from "./PayrollFilter";
 const sampleEmployees = [
   {
     id: 1,
-    name: "Admin User",
+    name: "Taha Alam",
     payPeriod: "12/2025",
     baseSalary: 80000,
     earnings: 0,
@@ -14,7 +14,7 @@ const sampleEmployees = [
   },
   {
     id: 2,
-    name: "test1",
+    name: "Khan Ashraf",
     payPeriod: "12/2025",
     baseSalary: 22,
     earnings: 0,
@@ -23,7 +23,7 @@ const sampleEmployees = [
   },
   {
     id: 3,
-    name: "John Doe",
+    name: "Ganesh Gaithonde",
     payPeriod: "12/2025",
     baseSalary: 50000,
     earnings: 0,
@@ -32,7 +32,7 @@ const sampleEmployees = [
   },
   {
     id: 4,
-    name: "Jane Smith",
+    name: "Sameer Rajput",
     payPeriod: "12/2025",
     baseSalary: 60000,
     earnings: 0,
@@ -41,7 +41,7 @@ const sampleEmployees = [
   },
   {
     id: 5,
-    name: "emp2",
+    name: "Abhay Rana",
     payPeriod: "12/2025",
     baseSalary: 500,
     earnings: 0,
@@ -50,7 +50,7 @@ const sampleEmployees = [
   },
   {
     id: 6,
-    name: "emp4",
+    name: "Arshad Khalifa",
     payPeriod: "12/2025",
     baseSalary: 90000,
     earnings: 0,
@@ -60,7 +60,7 @@ const sampleEmployees = [
 ];
 
 function formatCurrency(n) {
-  return `$${n.toFixed(2)}`;
+  return `₹${n.toFixed(2)}`;
 }
 
 const Payroll = () => {
