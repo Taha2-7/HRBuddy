@@ -131,7 +131,13 @@ export default function Dashboard() {
         transition={{ duration: 0.4 }}
         style={{ overflow: "hidden" }}
       >
-        <h2 className="mb-4 fw-bold">Dashboard</h2>
+        <div class="p-4 col-md-12">
+        <div className="mb-4">
+          <h2 >Admin Dashboard</h2>
+          <p class="text-muted">Overview of your Employee Management System</p>
+        </div>
+        
+        
 
         {/* ======== STAT CARDS ======== */}
         <div className="row g-3">
@@ -254,6 +260,7 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </motion.div>
     </Layout>
