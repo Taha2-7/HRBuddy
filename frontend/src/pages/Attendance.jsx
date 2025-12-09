@@ -71,17 +71,7 @@ export default function AdminAttendance() {
       status: "present",
     },
   ];
-
-  // --------------------------------------------
-  // LOAD DUMMY DATA IN USEEFFECT
-  // --------------------------------------------
-  useEffect(() => {
-    setEmployees(dummyEmployees);
-    filterAttendance();
-  }, [selectedDate, selectedEmployee]);
-
-  // --------------------------------------------
-  // FILTER LOGIC (DATE + EMPLOYEE)
+  
   // --------------------------------------------
   const filterAttendance = () => {
     setLoading(true);
@@ -103,6 +93,16 @@ export default function AdminAttendance() {
     setAttendanceData(data);
     setLoading(false);
   };
+  // LOAD DUMMY DATA IN USEEFFECT
+  // --------------------------------------------
+  useEffect(() => {
+    setEmployees(dummyEmployees);
+    filterAttendance();
+  }, [selectedDate, selectedEmployee]);
+
+  // --------------------------------------------
+  // FILTER LOGIC (DATE + EMPLOYEE)
+  // --------------------------------------------
 
 
   const getStatusBadge = (status) => {
