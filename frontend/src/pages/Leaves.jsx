@@ -4,10 +4,10 @@ import Layout from "../common/Layout";
 import LeaveFilter from "./LeaveFilter";
 
 const sampleLeaves = [
-  { id: 1, employee: "emp4", type: "Maternity Leave", start: "2026-01-08", end: "2026-03-20", reason: "1", status: "approved", appliedOn: "2025-11-23" },
-  { id: 2, employee: "emp4", type: "Sick Leave", start: "2025-12-01", end: "2025-12-10", reason: "plz", status: "rejected", appliedOn: "2025-11-22" },
-  { id: 3, employee: "emp4", type: "Sick Leave", start: "2025-11-23", end: "2025-11-29", reason: "mkk", status: "approved", appliedOn: "2025-11-22" },
-  { id: 4, employee: "emp4", type: "Sick Leave", start: "2025-11-23", end: "2025-11-28", reason: "why not", status: "rejected", appliedOn: "2025-11-22" },
+  { id: 1, employee: "Sana Ansari", type: "Maternity Leave", start: "2026-01-08", end: "2026-03-20", reason: "maternity leave", status: "approved", appliedOn: "2025-11-23" },
+  { id: 2, employee: "Tailwinder Karia", type: "Sick Leave", start: "2025-12-01", end: "2025-12-10", reason: "caught cold", status: "rejected", appliedOn: "2025-11-22" },
+  { id: 3, employee: "Niti Nohan", type: "Sick Leave", start: "2025-11-23", end: "2025-11-29", reason: "not feeling well", status: "approved", appliedOn: "2025-11-22" },
+  { id: 4, employee: "Arshad Abbas", type: "Sick Leave", start: "2025-11-23", end: "2025-11-28", reason: "body pain", status: "rejected", appliedOn: "2025-11-22" },
 ];
 
 
