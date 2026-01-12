@@ -1,0 +1,28 @@
+.dashboard-container {
+    background-color: #f4f6f9;
+    padding-bottom: 20px;
+  }
+  
+  /* stat cards */
+  
+  .stats-card {
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.25s ease;
+  }
+  
+  .stats-card:hover {
+    transform: translateY(-3px);
+  } 
+  
+  /* table styling */
+  .modern-table th {
+    background: #eef1f6 !important;
+    font-weight: 600;
+  }
+  
+  .modern-table td {
+    background: white !important;
+    vertical-align: middle;
+  }
+    
