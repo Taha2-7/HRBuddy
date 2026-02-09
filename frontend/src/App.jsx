@@ -10,6 +10,8 @@ import Leaves from "./pages/Leaves";
 import Payroll from "./pages/Payroll";
 import { Bounce, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import TrialSignup from "./components/TrialSignup";
+import TrialLogin from "./components/TrialLogin";
 
 const App = () => {
   return (

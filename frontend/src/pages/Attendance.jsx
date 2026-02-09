@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Layout from "./../common/Layout";
 
+//creating usestate() hook to store data state
 export default function AdminAttendance() {
   const [attendanceData, setAttendanceData] = useState([]);
   const [employees, setEmployees] = useState([]);
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedEmployee, setSelectedEmployee] = useState("");
   const [loading, setLoading] = useState(false);
-
 
   const dummyEmployees = [
     { id: 1, name: "Arshad Shaikh" },
@@ -71,7 +71,7 @@ export default function AdminAttendance() {
       status: "present",
     },
   ];
-  
+
   // --------------------------------------------
   const filterAttendance = () => {
     setLoading(true);
@@ -79,15 +79,11 @@ export default function AdminAttendance() {
     let data = [...dummyAttendance];
 
     if (selectedDate) {
-      data = data.filter(
-        (r) => r.date === selectedDate
-      );
+      data = data.filter((r) => r.date === selectedDate);
     }
 
     if (selectedEmployee) {
-      data = data.filter(
-        (r) => r.employee_id.toString() === selectedEmployee
-      );
+      data = data.filter((r) => r.employee_id.toString() === selectedEmployee);
     }
 
     setAttendanceData(data);
@@ -103,7 +99,6 @@ export default function AdminAttendance() {
   // --------------------------------------------
   // FILTER LOGIC (DATE + EMPLOYEE)
   // --------------------------------------------
-
 
   const getStatusBadge = (status) => {
     const styles = {
@@ -124,14 +119,15 @@ export default function AdminAttendance() {
     <Layout>
       <div className="mb-4">
         <h2>Attendance Management</h2>
-        <p className="text-muted">Monitor employee attendance and working hours</p>
+        <p className="text-muted">
+          Monitor employee attendance and working hours
+        </p>
       </div>
 
       {/* FILTER CARD */}
       <div className="card mb-4 shadow-sm">
         <div className="card-body">
           <div className="row g-3">
-
             {/* DATE FILTER */}
             <div className="col-md-6">
               <label className="form-label fw-bold">Select Date</label>
@@ -158,7 +154,6 @@ export default function AdminAttendance() {
                     {emp.name}
                   </option>
                 ))}
-
               </select>
             </div>
           </div>
